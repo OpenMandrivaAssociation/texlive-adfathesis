@@ -50,3 +50,12 @@ The bundle includes a BibTeX style file.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Thu Aug 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.42-2
++ Revision: 813364
+- Update to latest release.
+- Import texlive-adfathesis
+- Import texlive-adfathesis
+

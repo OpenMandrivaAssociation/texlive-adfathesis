@@ -6,7 +6,7 @@
 # catalog-version 2.42
 Name:		texlive-adfathesis
 Version:	2.42
-Release:	10
+Release:	11
 Summary:	Australian Defence Force Academy thesis format
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/adfathesis

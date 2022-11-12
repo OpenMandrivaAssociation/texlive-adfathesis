@@ -1,19 +1,13 @@
-# revision 26048
-# category Package
-# catalog-ctan /macros/latex/contrib/adfathesis
-# catalog-date 2011-11-23 23:58:18 +0100
-# catalog-license pd
-# catalog-version 2.42
 Name:		texlive-adfathesis
-Version:	2.42
-Release:	12
+Version:	26048
+Release:	1
 Summary:	Australian Defence Force Academy thesis format
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/adfathesis
 License:	PD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/adfathesis.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/adfathesis.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/adfathesis.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/adfathesis.r26048.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/adfathesis.doc.r26048.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/adfathesis.source.r26048.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -23,12 +17,12 @@ Requires(post):	texlive-kpathsea
 The bundle includes a BibTeX style file.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -43,19 +37,11 @@ The bundle includes a BibTeX style file.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Aug 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.42-2
-+ Revision: 813364
-- Update to latest release.
-- Import texlive-adfathesis
-- Import texlive-adfathesis
-

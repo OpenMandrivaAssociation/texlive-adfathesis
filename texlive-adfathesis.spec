@@ -1,6 +1,6 @@
 Name:		texlive-adfathesis
 Version:	26048
-Release:	1
+Release:	2
 Summary:	Australian Defence Force Academy thesis format
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/adfathesis

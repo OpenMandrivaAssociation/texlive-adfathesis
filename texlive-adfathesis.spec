@@ -3,7 +3,7 @@ Version:	26048
 Release:	2
 Summary:	Australian Defence Force Academy thesis format
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/adfathesis
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/adfathesis
 License:	PD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/adfathesis.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/adfathesis.doc.r%{version}.tar.xz
